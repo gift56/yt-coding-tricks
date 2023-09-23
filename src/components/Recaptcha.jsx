@@ -4,7 +4,14 @@ import ReCAPTCHA from "react-google-recaptcha";
 const RecaptchaComponent = () => {
   const [verified, setVerified] = useState(false);
 
-  function handleSubscripe() {}
+  function handleSubscripe() {
+    if(verified){
+        alert("You have Successfully subscribed!")
+    }
+    else{
+        alert("Please verify if you're a human")
+    }
+  }
 
   return (
     <div className="mt-4">
