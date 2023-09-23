@@ -7,7 +7,7 @@ const RecaptchaComponent = () => {
   function handleSubscripe() {}
 
   return (
-    <div>
+    <div className="mt-4">
       <input
         type="text"
         placeholder="Email Address"
