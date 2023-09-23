@@ -1,10 +1,18 @@
+import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const RecaptchaComponent = () => {
-  function onChange(value) {
+  const [verified, setVerified] = useState(false);
+  function handleSubscript(value) {
     console.log("Captcha value:", value);
   }
-  return <ReCAPTCHA sitekey="6Lc5b0ooAAAAAFV6RuPHVkfNIs4TSH3gI5CYTGdf" onChange={onChange} />;
+
+  return (
+    <div>
+      <input type="text" placeholder="Email Address" className="w-[400px] bg-white rounded outline-none h-14" />
+      <button></button>
+    </div>
+  );
 };
 
 export default RecaptchaComponent;
