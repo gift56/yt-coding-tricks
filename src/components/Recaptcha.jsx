@@ -8,8 +8,8 @@ const RecaptchaComponent = () => {
     console.log("Captcha value:", value);
     setVerified(true);
   }
-  function loadingRecaptcha() {
-    console.log("loaded recaptcha");
+  function loadingRecaptcha(){
+    console.log('loading recaptcha');
   }
 
   function handleSubscripe() {
@@ -34,7 +34,7 @@ const RecaptchaComponent = () => {
         Subscribe
       </button>
       <ReCAPTCHA
-        sitekey="6Lc5b0ooAAAAAFV6RuPHVkfNIs4TSH3gI5CYTGdf"
+        sitekey="Your Site Key"
         onChange={onChange}
         className="mt-4"
         asyncScriptOnLoad={loadingRecaptcha}
