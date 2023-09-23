@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import RecaptchaComponent from "./components/Recaptcha";
 
 const App = () => {
   const [show, setShow] = useState(false);
@@ -30,6 +31,8 @@ const App = () => {
       >
         Click Me
       </button>
+
+      <RecaptchaComponent />
 
       <div
         className={`fixed top-0 right-0 w-full h-full bg-[#0000004f] z-40 place-items-center flex justify-center transition-all duration-500 overflow-auto ${
