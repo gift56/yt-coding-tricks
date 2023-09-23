@@ -5,11 +5,10 @@ const RecaptchaComponent = () => {
   const [verified, setVerified] = useState(false);
 
   function handleSubscripe() {
-    if(verified){
-        alert("You have Successfully subscribed!")
-    }
-    else{
-        alert("Please verify if you're a human")
+    if (verified) {
+      alert("You have Successfully subscribed!");
+    } else {
+      alert("Please verify if you're a human");
     }
   }
 
@@ -26,6 +25,10 @@ const RecaptchaComponent = () => {
       >
         Subscribe
       </button>
+      <ReCAPTCHA
+        sitekey="6Lc5b0ooAAAAAFV6RuPHVkfNIs4TSH3gI5CYTGdf"
+        onChange={onChange}
+      />
     </div>
   );
 };
